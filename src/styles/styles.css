@@ -1,0 +1,118 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #048bff;
+  color: white;
+  height: 80vh
+}
+
+.intro-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  color: #191919;
+  font-size: 10em;
+  padding-left: 30px
+}
+
+.request-button {
+  background-color: #191919;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 10px;
+  border-color: transparent;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.request-button:hover {
+  color: #191919;
+  background-color: white;
+  padding: 10px 60px;
+  border-radius: 10px;
+  border-color: transparent;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.request-button:active {
+  transform: scale(.95);
+  transition: transform 800ms;
+}
+
+.request-button-submit {
+  background-color: #048bff;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 10px;
+  border-color: transparent;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.request-button-submit:hover {
+  background-color: white;
+  color: #048bff;
+  padding: 10px 60px;
+  border-radius: 10px;
+  border-color: transparent;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.request-button-submit:active {
+  transform: scale(.95);
+  transition: transform 800ms;
+}
+
+.request-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  color: #048bff;
+  height: 80vh
+}
+
+.request-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #048bff;
+}
+
+.request-container-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #048bff;
+  width: 50vw
+}
+
+h1 {
+  font-size: 7em;
+  color: 'white'
+}
+
