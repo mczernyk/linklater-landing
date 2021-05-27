@@ -7,27 +7,18 @@ import Seo from "../components/seo"
 import "../styles/styles.css"
 
 import Intro from "./components/Intro"
+import Info from "./components/Info"
 import RequestAccess from "./components/RequestAccess"
+import Footer from "./components/Footer"
+
 
 
 const IndexPage = () => (
-  <div>
+  <div className="content-container">
     <Intro />
-
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-
+    <Info />
     <RequestAccess />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <Footer />
   </div>
 )
 
