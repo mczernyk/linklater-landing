@@ -38,7 +38,7 @@ class Info extends React.Component {
             <h3>As the internet continues to get more saturated and fragmented, discovery and curation will become bigger problems for creators and consumers alike.</h3>
             <h3><span className="black-bold">LinkLater</span> helps you keep track of content that matters.</h3>
             <h3>Your <span className="blue-bold">Feed</span> is a composite of links that you've saved for later and content sent to you by friends that you can get to on your own time.</h3>
-            <h3>You can organize links from your <span className="blue-bold">Feed</span> into <span className="blue-bold">Collections</span> or share them with your friends in app on <span className="black-bold">LinkLater</span>.</h3>
+            <h3>You can easily organize links from your <span className="blue-bold">Feed</span> into <span className="blue-bold">Collections</span> or share them with your friends.</h3>
             </div>
 
             <h2></h2>
