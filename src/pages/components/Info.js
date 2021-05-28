@@ -33,8 +33,13 @@ class Info extends React.Component {
           </div>
 
           <div className="info-container-text">
-            <h2>LinkLater is a social bookmarking app.</h2>
-            <h3>As the internet continues to become more saturated and fragmented, discovery will be a growing problem for creators and consumers alike.</h3>
+            <h2><span className="black-bold">LinkLater</span> is a <span className="blue-bold">social</span> bookmarking app.</h2>
+            <div>
+            <h3>As the internet gets more saturated and fragmented,<br/>discovery and curation become bigger problems<br/>for creators and consumers alike.</h3>
+            <h3><span className="black-bold">LinkLater</span> helps you keep track of content that matters.</h3>
+            <h3>Your feed is a composite of links that you've saved for later and content sent to you by friends that you can get to on your own time.</h3>
+            </div>
+
             <h2></h2>
 
         </div>
