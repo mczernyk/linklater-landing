@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import demo from "../../images/screenshotTemp.png"
+import { RiPlayListAddFill, RiAddCircleLine, RiBookmarkLine } from "react-icons/ri";
+import { MdAddCircleOutline } from "react-icons/md";
+import { FiSend } from "react-icons/fi";
+import { FaList } from "react-icons/fa";
+
+
+
 
 class Info extends React.Component {
   constructor(props) {
@@ -34,18 +41,51 @@ class Info extends React.Component {
 
           <div className="info-container-text">
             <h2><span className="black-bold">LinkLater</span> is a <span className="blue-bold">social</span> bookmarking app.</h2>
+            <br/>
+            <div className="bullets">
 
-            <div>
-              <h3>As the internet continues to get more saturated and fragmented, discovery and curation will become bigger problems for creators and consumers alike.</h3>
-              <h3><span className="black-bold">LinkLater</span> helps you keep track of content that matters.</h3>
-              <h3>Your <span className="blue-bold">Feed</span> is a composite of links that you've saved for later and content sent to you by friends that you can get to on your own time.</h3>
-              <h3>You can easily organize links from your <span className="blue-bold">Feed</span> into <span className="blue-bold">Collections</span> or share them with your friends.</h3>
+              <div className="bullet-box">
+                <MdAddCircleOutline className="bullet-icon"/>
+                <div className="bullet-info">
+                  <p><span className="blue-bold">Save links for later.</span><br/>
+                  Add links to your feed so you can get to them on your own time.</p>
+                </div>
+              </div>
+              <br/>
+
+              <div className="bullet-box">
+                <FiSend className="bullet-icon"/>
+                <div className="bullet-info">
+                  <p><span className="blue-bold">Share with friends.</span><br/>
+                  Sync your contacts and share links with friends.</p>
+                </div>
+              </div>
+              <br/>
+
+
+              <div className="bullet-box">
+                <RiBookmarkLine className="bullet-icon"/>
+                <div className="bullet-info">
+                  <p><span className="blue-bold">Create collections.</span><br/>
+                  Create collections to organize your links.</p>
+                </div>
+              </div>
+              <br/>
+
+
+              <div className="bullet-box">
+                <FaList className="bullet-icon"/>
+                <div className="bullet-info">
+                  <p>
+                  <span className="blue-bold">One simple feed.</span><br/>
+                  No more digging through cluttered inboxes or threads.</p>
+                </div>
+              </div>
+              <br/>
+
             </div>
-
+          </div>
         </div>
-
-        </div>
-
       </div>
 
 
