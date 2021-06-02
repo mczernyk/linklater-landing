@@ -96,9 +96,9 @@ class RequestAccess extends React.Component {
     <form onSubmit={console.log('submit')}>
       <div className="request-container-input">
       <div className="center-text">
-      <FaLink className="link-icon-request"/>
+        <FaLink className="link-icon-request"/>
 
-      <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
+        <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
 
       </div>
 
