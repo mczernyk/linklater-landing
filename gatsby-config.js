@@ -14,13 +14,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: '', //add this
+    // {
+    //   resolve: 'gatsby-plugin-mailchimp',
+    //   options: {
+    //     endpoint: '', //add this
 
-      },
-    },
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
