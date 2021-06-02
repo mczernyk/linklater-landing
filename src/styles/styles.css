@@ -108,6 +108,11 @@ body {
   color: #048bff
 }
 
+.blue {
+  /* font-weight: 900; */
+  color: #048bff
+}
+
 .black-bold {
   font-weight: 900;
   color: #191919

@@ -40,7 +40,7 @@ class Info extends React.Component {
           </div>
 
           <div className="info-container-text">
-            <h2><span className="black-bold">LinkLater</span> is a <span className="blue-bold">social</span> bookmarking app.</h2>
+            <h2><span >LinkLater</span> is a <span className="blue">social</span> bookmarking app.</h2>
             <br/>
             <div className="bullets">
 
