@@ -78,19 +78,30 @@ class Intro extends React.Component {
   <div className="intro-container">
   <Seo title="Home" />
 
-  <Plx parallaxData={parallaxText} className="intro-container-text">
-
+  <Plx parallaxData={parallaxText}>
+  <div className="intro-container-text">
 
   <div className="title">
-    <h1>LinkLater</h1>
+    <h1>All your links<br/>in one place.</h1>
     <FaLink className="link-icon"/>
   </div>
 
-  <h2>All your links in one place.</h2>
-  <p><b>LinkLater</b> helps you save, organize and share links with friends.</p>
-  <button onClick={this.handleClickScroll} className="request-button">
-    <b>Request early access</b>
-  </button>
+
+  <div>
+    <h3><span className="bold">LinkLater</span> helps you save, organize and share links with friends.</h3>
+  </div>
+
+  <div>
+    <button onClick={this.handleClickScroll} className="request-button">
+      <b>Request early access</b>
+    </button>
+  </div>
+
+  </div>
+
+
+
+
   </Plx>
 
   </div>

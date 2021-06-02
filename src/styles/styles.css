@@ -22,7 +22,7 @@ body {
 .intro-container-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
 }
@@ -103,6 +103,10 @@ body {
   padding-right: 30px;
 }
 
+.bold {
+  font-weight: 900;
+}
+
 .blue-bold {
   font-weight: 900;
   color: #048bff
@@ -131,6 +135,17 @@ body {
   align-items: center;
   width: 100%;
 }
+
+.bullet-box:hover .bullet-icon {
+  color: #048bff;
+  transform: scale(1.05);
+  transition: transform 800ms;
+}
+
+/* .bullet-box:hover {
+  transform: scale(1.05);
+  transition: transform 800ms;
+} */
 
 .bullet-info {
   padding-left: 20px;
@@ -253,6 +268,8 @@ body {
 .copyright p {
   margin: 0;
   font-size: smaller;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .footer-links {

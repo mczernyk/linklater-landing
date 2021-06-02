@@ -4,6 +4,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../../components/seo"
 import Plx from "react-plx"
 import { FaLink } from "react-icons/fa";
+import addToMailchimp from 'gatsby-plugin-mailchimp'
+
 
 const parallaxData = [
   {
@@ -39,6 +41,47 @@ const parallaxText = [
 class RequestAccess extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      email: '',
+      name: '',
+      textInputChangeEmail: false,
+      textInputChangeName: false
+    }
+  }
+
+  setEmail = async (email, name) => {
+    this.setState({
+      email: email,
+      name: name,
+    })
+  }
+
+  textInputChangeEmail(input) {
+    input.length > 0
+      ? this.setState({
+          checkTextInputChangeEmail: true,
+          email: input
+        })
+      : this.setState({
+          checkTextInputChangeEmail: false
+        })
+  }
+
+  textInputChangeName(input) {
+    input.length > 0
+      ?
+        this.setState({
+          checkTextInputChangeName: true,
+          name: input
+        })
+      : this.setState({
+          checkTextInputChangeName: false
+        })
+  }
+
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    await addToMailchimp(this.state.email, this.state.name)
   }
 
   render() {
@@ -63,16 +106,17 @@ class RequestAccess extends React.Component {
           placeholder="Name"
           name="name"
           type="text"
-          onChange={console.log('change')}
           width="50vw"
+          onChange={text => this.textInputChangeName(text)}
         />
         <input
           placeholder="Email address"
           name="email"
           type="text"
-          onChange={console.log('change')}
+          onChange={text => this.textInputChangeEmail(text)}
+
         />
-        <button type="submit" onClick={console.log('submit')} className="request-button-submit">
+        <button type="submit" onClick={() => this.handleSubmit} className="request-button-submit">
         <b>Request early access</b>
       </button>
       </div>
