@@ -175,16 +175,15 @@ body {
 
 @media (max-width: 600px) {
   .info-container-items {
-    width: 100vw
-
+    width: 100vw;
   }
   .info-container-pic {
     width: 100vw
   }
   .info-container-text {
-    width: 100vw
+    width: 100vw;
+    margin-bottom: 10px
   }
-
   .info-container-text h2 {
     text-align: center;
   }
