@@ -315,7 +315,7 @@ body {
   color:white;
   width: 100%;
   padding-left: 10px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
 .footer-buttons {
@@ -354,18 +354,21 @@ body {
 
 @media (max-width: 600px) {
   .footer-choices {
-    flex-wrap: wrap-reverse
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   .footer-buttons {
     width: 100vw;
   }
   .copyright {
     min-height: 0vh;
+    width: 100vw;
   }
   .copyright p {
     text-align: center;
     width: 100vw;
-    padding: 0px
   }
 }
 
