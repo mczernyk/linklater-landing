@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import demo from "../../images/screenshotTemp.png"
+import demo from "../../images/Screenshot01.png"
 import { RiPlayListAddFill, RiAddCircleLine, RiBookmarkLine } from "react-icons/ri";
 import { MdAddCircleOutline } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
