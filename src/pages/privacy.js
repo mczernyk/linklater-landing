@@ -1,0 +1,56 @@
+import * as React from "react"
+import { Link } from "gatsby"
+import { FaLink } from "react-icons/fa";
+import Seo from "../components/seo"
+
+
+const Privacy = () => (
+  <div>
+    <Seo title="Terms" />
+
+    <div className="terms-container">
+      <div className="title-terms">
+        <h1>LinkLater</h1>
+        <FaLink className="link-icon-terms"/>
+      </div>
+      <div className="terms-text">
+        <p>
+        The LinkLater Beta Program is a voluntary program through which users may use a pre-release version of our mobile application (the “LinkLater App”) and provide feedback. The LinkLater App is owned and operated by Sheprd Technologies Inc. (“Licensor”). Your use of the LinkLater App and the LinkLater Beta Program is subject to the Terms and Privacy Policy below.</p>
+        <h2>Privacy Policy</h2>
+
+        <p>Using the LinkLater App and participating in the program may involve the collection and use of data by LinkLater as outlined below. Capitalized terms have the meaning assigned to them in the Terms above. </p>
+
+        <p>To help us improve the LinkLater App, we may collect and process diagnostic, technical, and usage logs and information from the device that is running the LinkLater App. Data includes general analytics data, various unique device identifiers, various unique system or hardware identifiers, details about hardware and operating system specifications, performance statistics, the use of peripherals, and — if Location Services is enabled — certain location information. None of the information that is collected identifies you personally. We may share these diagnostic, technical, and usage logs and information with partners and third-party developers for purposes of allowing them to improve their products and services that operate on or in connection with the LinkLater App.</p>
+
+        <p>In addition to the information that you provide to us when you register for a user account, we collect information about the URLs, titles and content of the web pages and other information you save to the LinkLater App. The types of information we collect includes your browser type, device type, time zone, language, and other information related to the manner in which you access the LinkLater App. If you are on a mobile device, we collect the advertising identifiers provided by Apple on iOS and by Google on Android. You can change this identifier in your device settings. We also collect information about your use of the LinkLater App so that we can provide our services.</p>
+
+        <p>We use the information collected from you in order to provide and improve our services. Although we strive to maintain the confidentiality of the personal information of our users, we may be required to release personal information if we have a good faith belief that disclosure is necessary or appropriate under applicable law. We will keep your information only for as long as we need it to provide you services, manage our business or as required by law or contract.</p>
+        <p>Please note this Privacy Policy may change from time to time. If you have any questions please contact us at <a key="email" href={'mailto:team@linklater.app'}>team@linklater.app</a>.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="footer-container">
+      <div className="footer-choices">
+
+        <div className="footer-buttons">
+          <Link className="footer-links" to="/">home</Link>
+          <Link className="footer-links" to="/terms/">terms</Link>
+        </div>
+
+        <div className="copyright">
+          <p>© {new Date().getFullYear()} • Sheprd Technologies Inc.</p>
+        </div>
+
+
+      </div>
+
+
+      </div>
+
+
+  </div>
+)
+
+export default Privacy
