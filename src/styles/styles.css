@@ -396,6 +396,7 @@ input {
 .title-terms {
   display: flex;
   flex-direction: row;
+  padding-top: 20px;
 }
 .title-terms h1 {
   font-size: x-large;
