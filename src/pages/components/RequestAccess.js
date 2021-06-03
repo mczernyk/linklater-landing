@@ -96,27 +96,30 @@ class RequestAccess extends React.Component {
     <div className="request-container-text">
       <form onSubmit={console.log('submit')}>
         <div className="request-container-input">
-        <div className="center-text">
-          <FaLink className="link-icon-request"/>
+          <div className="center-text">
+            <FaLink className="link-icon-request"/>
 
-          <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
+            <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
 
-        </div>
+          </div>
+          <div className="input-box">
+            <input
+              placeholder="Name"
+              name="name"
+              type="text"
+              width="50vw"
+              onChange={text => this.textInputChangeName(text)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              placeholder="Email address"
+              name="email"
+              type="text"
+              onChange={text => this.textInputChangeEmail(text)}
 
-          <input
-            placeholder="Name"
-            name="name"
-            type="text"
-            width="50vw"
-            onChange={text => this.textInputChangeName(text)}
-          />
-          <input
-            placeholder="Email address"
-            name="email"
-            type="text"
-            onChange={text => this.textInputChangeEmail(text)}
-
-          />
+            />
+          </div>
           <button type="submit" onClick={() => this.handleSubmit} className="request-button-submit">
           <b>Request early access</b>
         </button>

@@ -272,8 +272,9 @@ body {
   margin-bottom: 20px
 }
 
-.request-container-input input{
-  margin-bottom: 10px
+.input-box{
+  margin-bottom: 10px;
+  width: 100%
 }
 
 .link-icon-request{
