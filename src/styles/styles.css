@@ -383,3 +383,35 @@ input {
   padding: 5px
 }
 
+/* Terms */
+.terms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%
+  /* text-align: center; */
+}
+.title-terms {
+  display: flex;
+  flex-direction: row;
+}
+.title-terms h1 {
+  font-size: x-large;
+  color: #048BFF;
+  text-align: center;
+}
+.link-icon-terms {
+  color: #2A2A2A;
+  font-size: xx-large;
+  padding: 5px
+}
+.terms-text {
+  color: #2A2A2A;
+  width: 80%;
+}
+.terms-text h2 {
+  color: #048BFF;
+  text-align: center
+}
