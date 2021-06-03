@@ -25,11 +25,13 @@ const parallaxData = [
 const parallaxText = [
   {
     start: "self",
-    duration: "200vh",
+    duration: "90vh",
+    // duration: 200vh
     properties: [
       {
         startValue: 0,
-        endValue: 20,
+        endValue: 10,
+        // endValue: 20
         unit: "vh",
         property: "translateY",
       }
@@ -96,12 +98,14 @@ class RequestAccess extends React.Component {
     <div className="request-container-text">
       <form onSubmit={console.log('submit')}>
         <div className="request-container-input">
+
           <div className="center-text">
             <FaLink className="link-icon-request"/>
 
             <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
 
           </div>
+
           <div className="input-box">
             <input
               placeholder="Name"
