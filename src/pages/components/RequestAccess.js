@@ -107,7 +107,7 @@ class RequestAccess extends React.Component {
               placeholder="Name"
               name="name"
               type="text"
-              width="50vw"
+              autoFocus="autofocus"
               onChange={text => this.textInputChangeName(text)}
             />
           </div>
@@ -116,6 +116,7 @@ class RequestAccess extends React.Component {
               placeholder="Email address"
               name="email"
               type="text"
+              autoFocus="autofocus"
               onChange={text => this.textInputChangeEmail(text)}
 
             />
