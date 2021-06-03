@@ -18,7 +18,7 @@ class Footer extends React.Component {
         </div>
 
         <div className="copyright">
-          <p> © {new Date().getFullYear()} • Sheprd Technologies Inc.</p>
+          <p>© {new Date().getFullYear()} • Sheprd Technologies Inc.</p>
         </div>
 
 

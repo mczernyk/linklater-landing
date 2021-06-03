@@ -17,8 +17,10 @@ const IndexPage = () => (
   <div className="content-container">
     <Intro />
     <Info />
-    <RequestAccess />
-    <Footer />
+    <div className="bottom-container">
+      <RequestAccess />
+      <Footer />
+    </div>
   </div>
 )
 

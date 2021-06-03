@@ -92,35 +92,37 @@ class RequestAccess extends React.Component {
     <div className="request-container">
     <Seo title="Request" />
 
-    <Plx parallaxData={parallaxText} className="request-container-text">
-    <form onSubmit={console.log('submit')}>
-      <div className="request-container-input">
-      <div className="center-text">
-        <FaLink className="link-icon-request"/>
+    <Plx parallaxData={parallaxText}>
+    <div className="request-container-text">
+      <form onSubmit={console.log('submit')}>
+        <div className="request-container-input">
+        <div className="center-text">
+          <FaLink className="link-icon-request"/>
 
-        <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
+          <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
 
-      </div>
+        </div>
 
-        <input
-          placeholder="Name"
-          name="name"
-          type="text"
-          width="50vw"
-          onChange={text => this.textInputChangeName(text)}
-        />
-        <input
-          placeholder="Email address"
-          name="email"
-          type="text"
-          onChange={text => this.textInputChangeEmail(text)}
+          <input
+            placeholder="Name"
+            name="name"
+            type="text"
+            width="50vw"
+            onChange={text => this.textInputChangeName(text)}
+          />
+          <input
+            placeholder="Email address"
+            name="email"
+            type="text"
+            onChange={text => this.textInputChangeEmail(text)}
 
-        />
-        <button type="submit" onClick={() => this.handleSubmit} className="request-button-submit">
-        <b>Request early access</b>
-      </button>
-      </div>
-    </form>
+          />
+          <button type="submit" onClick={() => this.handleSubmit} className="request-button-submit">
+          <b>Request early access</b>
+        </button>
+        </div>
+      </form>
+    </div>
     </Plx>
 
     </div>

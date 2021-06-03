@@ -87,7 +87,7 @@ class Intro extends React.Component {
   </div>
 
 
-  <div>
+  <div className="title-tagline">
     <h3><span className="bold">LinkLater</span> helps you save, organize and share links with friends.</h3>
   </div>
 
