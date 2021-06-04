@@ -102,7 +102,7 @@ class RequestAccess extends React.Component {
           <div className="center-text">
             <FaLink className="link-icon-request"/>
 
-            <p>Sign up below to request<br></br>early access to <span className='white-text'><b>LinkLater</b></span> for iOS</p>
+            <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
 
           </div>
 
