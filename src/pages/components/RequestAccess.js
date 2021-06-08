@@ -83,7 +83,7 @@ class RequestAccess extends React.Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    // await addToMailchimp(this.state.email, this.state.name)
+    await addToMailchimp(this.state.email, {NAME: this.state.name})
   }
 
   render() {
