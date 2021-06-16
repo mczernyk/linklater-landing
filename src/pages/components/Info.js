@@ -67,7 +67,7 @@ class Info extends React.Component {
                 <RiBookmarkLine className="bullet-icon"/>
                 <div className="bullet-info">
                   <p><span className="blue-bold">Create collections.</span><br/>
-                  Personal and group collections help you organize your links.</p>
+                  Personal and shared collections help you organize your links.</p>
                 </div>
               </div>
               <br/>
