@@ -81,21 +81,21 @@ class Intro extends React.Component {
   <Plx parallaxData={parallaxText}>
   <div className="intro-container-text">
 
-  <div className="title">
-    <h1>All your links<br/>in one place.</h1>
-    <FaLink className="link-icon"/>
-  </div>
+    <div className="title">
+      <h1>All your links<br/>in one place.</h1>
+      <FaLink className="link-icon"/>
+    </div>
 
 
-  <div className="title-tagline">
-    <h3>LinkLater helps you save, organize and share links with friends.</h3>
-  </div>
+    <div className="title-tagline">
+      <h3>LinkLater helps you save, organize and share links with friends.</h3>
+    </div>
 
-  <div>
-    <button onClick={this.handleClickScroll} className="request-button">
-      <b>Request early access</b>
-    </button>
-  </div>
+    <div>
+      <button onClick={this.handleClickScroll} className="request-button">
+        <b>Request early access</b>
+      </button>
+    </div>
 
   </div>
 
