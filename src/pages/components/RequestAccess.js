@@ -47,7 +47,8 @@ class RequestAccess extends React.Component {
       email: '',
       name: '',
       textInputChangeEmail: false,
-      textInputChangeName: false
+      textInputChangeName: false,
+      result: ''
     }
   }
 
@@ -83,7 +84,11 @@ class RequestAccess extends React.Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-    await addToMailchimp(this.state.email, {NAME: this.state.name})
+    const result = await addToMailchimp(this.state.email, {NAME: this.state.name})
+    await this.setState({
+      result: result
+    })
+    console.log('result', this.state.result)
   }
 
   render() {
