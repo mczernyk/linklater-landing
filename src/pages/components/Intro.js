@@ -79,11 +79,17 @@ class Intro extends React.Component {
   <Seo title="Home" />
 
   <Plx parallaxData={parallaxText}>
+  <div>
+      <div className="top-container">
+      <h3>LinkLater</h3>
+      <h2 className="top-logo"><FaLink/></h2>
+      </div>
+  </div>
   <div className="intro-container-text">
 
     <div className="title">
-      <h1>All your links<br/>in one place.</h1>
-      <FaLink className="link-icon"/>
+      <h1>Keep up on<br/>your own time.</h1>
+      {/*<FaLink className="link-icon"/>*/}
     </div>
 
 

@@ -22,6 +22,19 @@ body {
   height: 100%
 }
 
+.top-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-right: 10%
+}
+.top-logo {
+  color: #191919;
+  padding-left: 4px
+}
+
 .intro-container-text {
   display: flex;
   flex-direction: column;
@@ -56,6 +69,11 @@ body {
 
 /* Intro Container - Mobile View */
 @media (max-width: 600px) {
+  .top-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .title {
     flex-wrap: wrap;
   }
