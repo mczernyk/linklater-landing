@@ -88,13 +88,14 @@ class Intro extends React.Component {
   <div className="intro-container-text">
 
     <div className="title">
-      <h1>Keep up on<br/>your own time.</h1>
+      <h1>Save links<br/>for later.</h1>
       {/*<FaLink className="link-icon"/>*/}
     </div>
 
 
     <div className="title-tagline">
-      <h3>LinkLater helps you save, organize and share links with friends.</h3>
+      <h3>Stop digging through cluttered inboxes and threads.</h3>
+      <h3>LinkLater makes it easy to save links and create collections with friends.</h3>
     </div>
 
     <div>

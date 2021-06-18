@@ -51,6 +51,10 @@ body {
   align-items: center;
 }
 
+.title-tagline h2 {
+  text-align: center;
+}
+
 .title h1 {
   font-size: 8vw;
   text-align: center;
