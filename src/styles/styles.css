@@ -83,7 +83,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* padding-bottom: 10% */
+    margin-bottom: 10px
   }
   .title {
     flex-wrap: wrap;
