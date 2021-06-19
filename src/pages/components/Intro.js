@@ -101,7 +101,7 @@ class Intro extends React.Component {
       {/*<h3>Stop digging through cluttered inboxes and threads.</h3>
       <h3>LinkLater makes it easy to save links</h3><h3>and create collections with friends.</h3>*/}
       <h3>Stop digging through cluttered inboxes and threads.</h3>
-      <h3>LinkLater makes it easy to save links and create collections with friends.</h3>
+      <h3>LinkLater helps you save, organize and share links with friends.</h3>
       {/*<h3 className="display-linebreak">{text}</h3>*/}
     </div>
 
