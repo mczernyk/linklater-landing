@@ -297,7 +297,7 @@ body {
   align-items: center;
   background-color: #191919;
   color: #048bff;
-  min-height: 90vh;
+  min-height: 92vh;
 }
 
 .request-container-text {
@@ -339,7 +339,7 @@ body {
   align-items: center;
   background-color: #048bff;
   color: white;
-  height: 10vh
+  height: 8vh
 }
 
 .center-text {
@@ -374,7 +374,7 @@ body {
 }
 
 .copyright {
-  min-height: 10vh;
+  min-height: 8vh;
   display: flex;
   align-items: center;
 }
