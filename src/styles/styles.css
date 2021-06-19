@@ -63,8 +63,14 @@ body {
 
 .title-tagline h3 {
   text-align: center;
+  font-weight: normal;
 
 }
+
+.display-linebreak {
+  white-space: pre-line;
+}
+
 .link-icon {
   color: #191919;
   font-size: 13vw;

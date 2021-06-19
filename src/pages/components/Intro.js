@@ -72,6 +72,10 @@ class Intro extends React.Component {
   }
 
   render() {
+    // const text = 'Stop digging through cluttered inboxes and threads.\nLinkLater makes it easy to save links and create collections with friends.'
+    // const text = 'Stop digging through cluttered inboxes and threads.\nLinkLater makes it easy to save links and\ncreate collections with friends.'
+    const text = 'LinkLater makes it easy to save links and\ncreate collections with friends.'
+
     return (
   <Plx parallaxData={parallaxData}>
 
@@ -94,8 +98,11 @@ class Intro extends React.Component {
 
 
     <div className="title-tagline">
+      {/*<h3>Stop digging through cluttered inboxes and threads.</h3>
+      <h3>LinkLater makes it easy to save links</h3><h3>and create collections with friends.</h3>*/}
       <h3>Stop digging through cluttered inboxes and threads.</h3>
       <h3>LinkLater makes it easy to save links and create collections with friends.</h3>
+      {/*<h3 className="display-linebreak">{text}</h3>*/}
     </div>
 
     <div>
