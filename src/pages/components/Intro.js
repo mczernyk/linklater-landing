@@ -77,6 +77,7 @@ class Intro extends React.Component {
     const text = 'LinkLater makes it easy to save links and\ncreate collections with friends.'
 
     return (
+  <section id="intro">
   <Plx parallaxData={parallaxData}>
 
   <div className="intro-container">
@@ -120,7 +121,7 @@ class Intro extends React.Component {
 
   </div>
   </Plx>
-
+  </section>
 )
 }
 }

@@ -5,6 +5,8 @@ import Seo from "../../components/seo"
 import Plx from "react-plx"
 import { FaLink } from "react-icons/fa";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
+import smoothscroll from "smoothscroll-polyfill"
+
 
 
 const parallaxData = [
@@ -43,6 +45,7 @@ const parallaxText = [
 class RequestAccess extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClickScroll = this.handleClickScroll.bind(this)
     this.state = {
       email: '',
       name: '',
@@ -91,9 +94,39 @@ class RequestAccess extends React.Component {
     console.log('result', this.state.result)
   }
 
+  componentDidMount() {
+    smoothscroll.polyfill()
+  }
+
+  handleClickScroll(e) {
+    e.preventDefault()
+    let scroll = true
+    // const { type, element, offset, timeout } = this.props
+
+    let elem = document.getElementById("intro")
+          scroll = elem ? true : false
+
+    scroll
+      ? this.scrollTo(elem, 0, null)
+      : console.log(`Element not found: ${element}`) // eslint-disable-line
+  }
+  scrollTo(element, offSet = 0, timeout = null) {
+    const elemPos = element
+      ? element.getBoundingClientRect().top + window.pageYOffset
+      : 0
+    if (timeout) {
+      setTimeout(() => {
+        window.scroll({ top: elemPos + offSet, left: 0, behavior: "smooth" })
+      }, timeout)
+    } else {
+      window.scroll({ top: elemPos + offSet, left: 0, behavior: "smooth" })
+    }
+  }
+
+
   render() {
     return (
-    <section id="request" >
+    <section id="request">
     <Plx parallaxData={parallaxData}>
 
     <div className="request-container">
@@ -105,7 +138,9 @@ class RequestAccess extends React.Component {
         <div className="request-container-input">
 
           <div className="center-text">
-            <FaLink className="link-icon-request"/>
+
+            <FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
+            />
 
             <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
 

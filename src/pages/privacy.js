@@ -9,10 +9,10 @@ const Privacy = () => (
     <Seo title="Terms" />
 
     <div className="terms-container">
-      <div className="title-terms">
+      <Link className="title-terms" to="/">
         <h1>LinkLater</h1>
         <FaLink className="link-icon-terms"/>
-      </div>
+      </Link>
       <div className="terms-text">
         <p>
         The LinkLater Beta Program is a voluntary program through which users may use a pre-release version of our mobile application (the “LinkLater App”) and provide feedback. The LinkLater App is owned and operated by Sheprd Technologies Inc. (“Licensor”). Your use of the LinkLater App and the LinkLater Beta Program is subject to our <Link className="terms-links" to="/terms/">Terms of Service</Link> and <Link className="terms-links" to="/privacy/">Privacy Policy</Link>.
@@ -29,10 +29,10 @@ const Privacy = () => (
         <p>We use the following third-party Service Providers to monitor and analyze use of the LinkLater App:
           <ul>
             <li><b>Google Analytics: </b>
-            Google Analytics is an analytics service offered by Google that tracks and reports traffic. We use Google Analytics to help us monitor and improve the LinkLater App. For more information on the privacy practices of Google, please visit the Google Privacy Terms web page: <a href={'https://policies.google.com/privacy?hl=en'}>https://policies.google.com/privacy?hl=en</a>.
+            Google Analytics is an analytics service offered by Google that tracks and reports traffic. We use Google Analytics to help us monitor and improve the LinkLater App. For more information on the privacy practices of Google, please visit the <a className="terms-links" href={'https://policies.google.com/privacy?hl=en'}>Google Privacy Terms web page</a>.
             </li>
             <li><b>Firebase: </b>
-            Firebase is an analytics service provided by Google. We use Firebase to help us monitor and improve the LinkLater App. For more information on what type of information Firebase collects, please visit the Google Privacy Terms web page: <a href={'https://policies.google.com/privacy?hl=en'}>https://policies.google.com/privacy?hl=en</a>.
+            Firebase is an analytics service provided by Google. We use Firebase to help us monitor and improve the LinkLater App. For more information on what type of information Firebase collects, please visit the <a className="terms-links" href={'https://policies.google.com/privacy?hl=en'}>Google Privacy Terms web page</a>.
             </li>
           </ul>
         </p>

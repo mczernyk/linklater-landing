@@ -9,10 +9,10 @@ const Terms = () => (
     <Seo title="Terms" />
 
     <div className="terms-container">
-      <div className="title-terms">
+      <Link className="title-terms" to="/">
         <h1>LinkLater</h1>
         <FaLink className="link-icon-terms"/>
-      </div>
+      </Link>
       <div className="terms-text">
         <p>
         The LinkLater Beta Program is a voluntary program through which users may use a pre-release version of our mobile application (the “LinkLater App”) and provide feedback. The LinkLater App is owned and operated by Sheprd Technologies Inc. (“Licensor”). Your use of the LinkLater App and the LinkLater Beta Program is subject to our <Link className="terms-links" to="/terms/">Terms of Service</Link> and <Link className="terms-links" to="/privacy/">Privacy Policy</Link>.
