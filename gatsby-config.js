@@ -29,15 +29,14 @@ module.exports = {
         name: `LinkLater`,
         short_name: `LinkLater`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#048BFF`,
         theme_color: `#048BFF`,
         display: `minimal-ui`,
         icon: `src/images/Icon-Thumb-Square.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
   ],
 }
