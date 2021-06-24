@@ -326,19 +326,20 @@ body {
 
 .success{
   color: green;
-  padding-top: 60px
+  padding-top: 35px
 
 }
 
 .failure{
   color: red;
-  padding-top: 65px
+  padding-top: 35px
 }
 .input-response{
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
-  color: white
+  color: white;
+  padding-bottom: 15px
 }
 
 .input-response h3{
