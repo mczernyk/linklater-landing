@@ -184,14 +184,14 @@ class RequestAccess extends React.Component {
 
         <div className="input-response">
           {this.state.result === 'success' ?
-          <h3 className="success">Success!</h3> :
-          <h3 className="failure">Something went wrong.</h3>
+          <h2 className="success">Success!</h2> :
+          <h2 className="failure">Something went wrong.</h2>
           }
         </div>
         <div className="input-response">
           {this.state.result === 'success' ?
-          <p>Your request has been sent.</p> :
-          <p>Please try again later.</p>
+          <h3>Your request has been sent.</h3> :
+          <h3>Please try again later.</h3>
           }
         </div>
 
