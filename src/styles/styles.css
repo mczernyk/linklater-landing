@@ -321,7 +321,26 @@ body {
 
 .input-box{
   margin-bottom: 10px;
-  width: 100%
+  width: 100%;
+}
+
+.success{
+  color: green
+}
+
+.failure{
+  color: red
+}
+.input-response{
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white
+}
+
+.input-response p{
+  text-align: center;
+  width: 100%;
 }
 
 .link-icon-request{

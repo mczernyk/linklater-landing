@@ -62,36 +62,33 @@ class RequestAccess extends React.Component {
     })
   }
 
-  textInputChangeEmail(input) {
-    input.length > 0
-      ? this.setState({
-          checkTextInputChangeEmail: true,
-          email: input
-        })
-      : this.setState({
-          checkTextInputChangeEmail: false
-        })
+  handleChangeEmail = event => {
+    this.setState({
+      email: event.target.value
+    })
   }
 
-  textInputChangeName(input) {
-    input.length > 0
-      ?
-        this.setState({
-          checkTextInputChangeName: true,
-          name: input
-        })
-      : this.setState({
-          checkTextInputChangeName: false
-        })
+  handleChangeName = event => {
+    this.setState({
+      name: event.target.value
+    })
   }
 
   handleSubmit = async (e) => {
+    console.log('handle sub')
     e.preventDefault();
-    const result = await addToMailchimp(this.state.email, {NAME: this.state.name})
-    await this.setState({
-      result: result
-    })
+    const result = await addToMailchimp(
+      this.state.email,
+      {
+        NAME: this.state.name
+      }
+    )
+
     console.log('result', this.state.result)
+
+    await this.setState({
+      result: result.result
+    })
   }
 
   componentDidMount() {
@@ -134,7 +131,8 @@ class RequestAccess extends React.Component {
 
     <Plx parallaxData={parallaxText}>
     <div className="request-container-text">
-      <form onSubmit={console.log('submit')}>
+      {!this.state.result ? (
+        <form onSubmit={this.handleSubmit}>
         <div className="request-container-input">
 
           <div className="center-text">
@@ -152,7 +150,7 @@ class RequestAccess extends React.Component {
               name="name"
               type="text"
               autoFocus="autofocus"
-              onChange={text => this.textInputChangeName(text)}
+              onChange={text => this.handleChangeName(text)}
             />
           </div>
           <div className="input-box">
@@ -161,15 +159,44 @@ class RequestAccess extends React.Component {
               name="email"
               type="text"
               autoFocus="autofocus"
-              onChange={text => this.textInputChangeEmail(text)}
+              onChange={text => this.handleChangeEmail(text)}
 
             />
           </div>
-          <button type="submit" onClick={() => this.handleSubmit} className="request-button-submit">
+          <button
+            type="submit"
+            label="submit"
+            // onClick={() => this.handleSubmit}
+            className="request-button-submit">
           <b>Request early access</b>
         </button>
         </div>
-      </form>
+      </form>) : (
+        <div className="request-container-input">
+          <div className="center-text">
+
+          <FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
+          />
+
+          <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
+
+        </div>
+
+        <div className="input-response">
+          {this.state.result === 'success' ?
+          <h3 className="success">Success!</h3> :
+          <h3 className="failure">Something went wrong.</h3>
+          }
+        </div>
+        <div className="input-response">
+          {this.state.result === 'success' ?
+          <p>Your request has been sent.</p> :
+          <p>Please try again later.</p>
+          }
+        </div>
+
+        </div>
+      )}
     </div>
     </Plx>
 
