@@ -166,7 +166,6 @@ class RequestAccess extends React.Component {
           <button
             type="submit"
             label="submit"
-            // onClick={() => this.handleSubmit}
             className="request-button-submit">
           <b>Request early access</b>
         </button>
