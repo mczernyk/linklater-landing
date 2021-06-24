@@ -6,6 +6,8 @@ import { RiPlayListAddFill, RiAddCircleLine, RiBookmarkLine } from "react-icons/
 import { MdAddCircleOutline } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import { FaList } from "react-icons/fa";
+import Seo from "../../components/seo"
+
 
 
 
@@ -18,6 +20,7 @@ class Info extends React.Component {
   render() {
     return (
       <div className="info-container">
+      <Seo title="LinkLater" />
         <div className="info-container-items">
           <div className="info-container-pic">
 

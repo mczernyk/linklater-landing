@@ -1,6 +1,8 @@
 
 import * as React from "react"
 import { Link } from "gatsby"
+import Seo from "../../components/seo"
+
 
 class Footer extends React.Component {
   constructor(props) {
@@ -10,6 +12,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer-container">
+      <Seo title="LinkLater" />
       <div className="footer-choices">
 
         <div className="footer-buttons">
