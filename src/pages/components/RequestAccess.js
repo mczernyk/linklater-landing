@@ -6,6 +6,8 @@ import Plx from "react-plx"
 import { FaLink } from "react-icons/fa";
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import smoothscroll from "smoothscroll-polyfill"
+import icon from "../../images/Icon-White.png"
+
 
 
 
@@ -136,9 +138,11 @@ class RequestAccess extends React.Component {
         <div className="request-container-input">
 
           <div className="center-text">
+            <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
 
-            <FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
-            />
+
+            {/*<FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
+      />*/}
 
             <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
 
@@ -174,8 +178,7 @@ class RequestAccess extends React.Component {
         <div className="request-container-input">
           <div className="center-text">
 
-          <FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
-          />
+          <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
 
           <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
 

@@ -2,6 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { FaLink } from "react-icons/fa";
 import Seo from "../components/seo"
+import icon from "../images/Icon-Black.png"
+
 
 
 const Privacy = () => (
@@ -11,7 +13,7 @@ const Privacy = () => (
     <div className="terms-container">
       <Link className="title-terms" to="/">
         <h1>LinkLater</h1>
-        <FaLink className="link-icon-terms"/>
+        <div className="link-icon-terms"><img src={icon}/></div>
       </Link>
       <div className="terms-text">
         <p>

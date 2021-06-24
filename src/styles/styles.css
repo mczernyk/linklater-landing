@@ -27,12 +27,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.top-container h3{
+  flex-direction: row;
+  align-items: center;
 }
 .top-logo {
   color: #191919;
   padding-left: 4px
+}
+
+.top-logo img {
+  height: 28px;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .intro-container-text {
@@ -350,7 +362,12 @@ body {
 .link-icon-request{
   color: white;
   font-size: 5em;
-  padding-bottom: 40px
+  padding-bottom: 10px
+}
+
+.link-icon-request img{
+  height: 70px;
+  cursor: pointer
 }
 
 /* Footer Container */
@@ -476,7 +493,11 @@ input {
 .link-icon-terms {
   color: #2A2A2A;
   font-size: xx-large;
-  padding: 5px
+  padding: 5px;
+  cursor: pointer
+}
+.link-icon-terms img {
+  height: 23px
 }
 .terms-text {
   color: #2A2A2A;

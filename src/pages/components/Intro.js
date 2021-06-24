@@ -5,6 +5,8 @@ import Seo from "../../components/seo"
 import Plx from "react-plx"
 import { FaLink } from "react-icons/fa";
 import smoothscroll from "smoothscroll-polyfill"
+import icon from "../../images/Icon-Black.png"
+
 
 
 const parallaxData = [
@@ -87,7 +89,8 @@ class Intro extends React.Component {
   <div>
       <div className="top-container">
       <h3>LinkLater</h3>
-      <h2 className="top-logo"><FaLink/></h2>
+      <h2 className="top-logo"><img src={icon} />
+      </h2>
       </div>
   </div>
   <div className="intro-container-text">
