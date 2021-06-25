@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#048BFF`,
         theme_color: `#048BFF`,
         display: `minimal-ui`,
-        icon: `src/images/Icon-Thumb-Square.png`,
+        icon: `src/images/Icon-Thumb-Black-BlueBg.png`,
       },
     },
     `gatsby-plugin-gatsby-cloud`,
