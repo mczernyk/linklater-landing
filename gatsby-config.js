@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `LinkLater`,
+    title: `LinkLater 🔗`,
     description: `Save, organize and share links with friends.`,
     author: `LinkLater`,
   },
@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `LinkLater`,
+        name: `LinkLater 🔗`,
         short_name: `LinkLater`,
         start_url: `/`,
         background_color: `#048BFF`,
