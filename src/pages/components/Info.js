@@ -20,7 +20,7 @@ class Info extends React.Component {
   render() {
     return (
       <div className="info-container">
-      <Seo title="🔗 About" />
+      <Seo title="LinkLater🔗 - About" />
         <div className="info-container-items">
           <div className="info-container-pic">
 

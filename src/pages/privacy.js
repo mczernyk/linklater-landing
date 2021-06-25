@@ -8,7 +8,7 @@ import icon from "../images/Icon-Black.png"
 
 const Privacy = () => (
   <div>
-    <Seo title="🔗 Privacy" />
+    <Seo title="LinkLater🔗 - Privacy" />
 
     <div className="terms-container">
       <Link className="title-terms" to="/">
