@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `LinkLater 🔗`,
-    description: `Save, organize and share links with friends.`,
+    description: `LinkLater 🔗 helps you save, organize and share links with friends.`,
     author: `LinkLater`,
   },
   plugins: [
