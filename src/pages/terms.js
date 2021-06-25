@@ -8,7 +8,7 @@ import icon from "../images/Icon-Black.png"
 
 const Terms = () => (
   <div>
-    <Seo title="LinkLater🔗 - Terms" />
+    <Seo title="LinkLater 🔗 | Terms of Service" />
 
     <div className="terms-container">
       <Link className="title-terms" to="/">

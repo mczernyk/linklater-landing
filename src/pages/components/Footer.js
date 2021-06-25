@@ -12,7 +12,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer-container">
-      <Seo />
+      <Seo title="LinkLater 🔗 | Save links for later" />
       <div className="footer-choices">
 
         <div className="footer-buttons">
