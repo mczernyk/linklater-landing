@@ -15,7 +15,7 @@ import Footer from "./components/Footer"
 
 const IndexPage = () => (
   <div className="content-container">
-  <Seo title="LinkLater 🔗 | Save links for later" />
+  <Seo title="Save links for later" />
 
     <Intro />
     <Info />
