@@ -359,6 +359,10 @@ body {
   width: 100%;
 }
 
+.input-response h3 a {
+  color: #048BFF
+}
+
 .link-icon-request{
   color: white;
   font-size: 5em;
@@ -506,6 +510,10 @@ input {
 .terms-text h2 {
   color: #048BFF;
   text-align: center
+}
+
+.terms-text p a {
+  color: #048BFF
 }
 
 .terms-links {

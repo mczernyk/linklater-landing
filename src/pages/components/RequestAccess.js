@@ -193,7 +193,7 @@ class RequestAccess extends React.Component {
         <div className="input-response">
           {this.state.result === 'success' ?
           <h3>Your request has been sent.</h3> :
-          <h3>Please try again later.</h3>
+          <h3>Please try again later or email <a key="email" href={'mailto:team@linklater.app'}>team@linklater.app</a>.</h3>
           }
         </div>
 
