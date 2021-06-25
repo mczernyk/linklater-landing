@@ -129,7 +129,7 @@ class RequestAccess extends React.Component {
     <Plx parallaxData={parallaxData}>
 
     <div className="request-container">
-    <Seo title="LinkLater 🔗" />
+    <Seo title="LinkLater 🔗 Home" />
 
     <Plx parallaxData={parallaxText}>
     <div className="request-container-text">

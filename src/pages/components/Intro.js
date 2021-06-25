@@ -83,7 +83,7 @@ class Intro extends React.Component {
   <Plx parallaxData={parallaxData}>
 
   <div className="intro-container">
-  <Seo title="LinkLater 🔗" />
+  <Seo title="LinkLater 🔗 Home" />
 
   <Plx parallaxData={parallaxText}>
   <div>
