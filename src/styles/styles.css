@@ -270,6 +270,7 @@ body {
 /* Request Container */
 .bottom-container {
   height: 100vh;
+  background-color: #191919
 }
 
 .request-button-submit {
