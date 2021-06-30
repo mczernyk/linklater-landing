@@ -182,10 +182,7 @@ class RequestAccess extends React.Component {
 
             <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
 
-
             <p>Request received for<br></br><span className='white-text'>{this.state.email}</span>.</p>
-
-
 
           </div>
 
