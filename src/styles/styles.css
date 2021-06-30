@@ -338,15 +338,21 @@ body {
 }
 
 .success{
-  color: green;
+  /* color: green; */
   padding-top: 35px
-
 }
-
+.success-text{
+  color: #048BFF
+}
 .failure{
   color: red;
   padding-top: 35px
 }
+
+.failure-top{
+  color: red;
+}
+
 .input-response{
   margin-bottom: 10px;
   width: 100%;

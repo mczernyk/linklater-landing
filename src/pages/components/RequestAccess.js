@@ -144,7 +144,7 @@ class RequestAccess extends React.Component {
             {/*<FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
       />*/}
 
-            <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
+            <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS.</p>
 
           </div>
 
@@ -175,29 +175,76 @@ class RequestAccess extends React.Component {
         </button>
         </div>
       </form>) : (
+        this.state.result === 'success' ?
         <div className="request-container-input">
+
           <div className="center-text">
 
-          <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
+            <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
 
-          <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS</p>
+
+            <p>Sign up below to request<br></br>early access to <span className='white-text'>LinkLater</span> for iOS.</p>
+
+
+
+          </div>
+
+          <div className="input-response">
+            <h2 className='success'>Thanks for linking up 🔗</h2>
+          </div>
+          <div className="input-response">
+
+            <p className='success-text'>We'll be in touch soon.</p>
+
+          </div>
+
 
         </div>
+        : (
+          <form onSubmit={this.handleSubmit}>
+        <div className="request-container-input">
 
-        <div className="input-response">
-          {this.state.result === 'success' ?
-          <h2 className="success">Success!</h2> :
-          <h2 className="failure">Something went wrong.</h2>
-          }
-        </div>
-        <div className="input-response">
-          {this.state.result === 'success' ?
-          <h3>Your request for {this.state.email} has been sent.</h3> :
-          <h3>Please try again later or email <a key="email" href={'mailto:team@linklater.app'}>team@linklater.app</a>.</h3>
-          }
-        </div>
+          <div className="center-text">
+            <div className="link-icon-request"><img src={icon} onClick={this.handleClickScroll} cursor="pointer" /></div>
 
+
+            {/*<FaLink className="link-icon-request" onClick={this.handleClickScroll}   cursor="pointer"
+      />*/}
+
+            <p className='failure-top'>There was an error.<br></br>Please enter a valid email address.</p>
+
+          </div>
+
+          <div className="input-box">
+            <input
+              placeholder="Name"
+              name="name"
+              type="text"
+              autoFocus="autofocus"
+              onChange={text => this.handleChangeName(text)}
+            />
+          </div>
+          <div className="input-box">
+            <input
+              placeholder="Email address"
+              name="email"
+              type="text"
+              autoFocus="autofocus"
+              onChange={text => this.handleChangeEmail(text)}
+
+            />
+          </div>
+          <button
+            type="submit"
+            label="submit"
+            className="request-button-submit">
+          <b>Request early access</b>
+        </button>
         </div>
+      </form>
+
+        )
+
       )}
     </div>
     </Plx>
