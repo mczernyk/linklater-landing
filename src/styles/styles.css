@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 10px
+    margin-bottom: 30px
   }
   .title {
     flex-wrap: wrap;
@@ -116,7 +116,9 @@ body {
     margin-bottom: 10px
   }
   .intro-container-text {
-    max-height: 80vh
+    max-height: 80vh;
+    min-height: 70vh;
+    /* background-color: red; */
   }
 }
 
