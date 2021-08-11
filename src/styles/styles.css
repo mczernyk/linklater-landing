@@ -202,6 +202,13 @@ body {
   padding-bottom: 30px
 }
 
+.info-container-text h2 {
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 30px;
+  /* color: 'white'; */
+}
+
 .bullets {
   min-height: 46vh;
   display: flex;
@@ -211,11 +218,8 @@ body {
   align-items: center;
 }
 
-.info-container-text h2 {
-  font-size: 3vw;
-  text-align: center;
-  padding-bottom: 30px;
-  /* color: 'white'; */
+.bullet-box p {
+  font-size: 1.5vw
 }
 
 .bullet-icon {
@@ -234,7 +238,6 @@ body {
 
 .bullet-text {
   text-align: center;
-  font-weight: normal;
 }
 
 .bullet-text a {
@@ -281,6 +284,9 @@ body {
   }
   .bullet-box{
     width: 100%
+  }
+  .bullet-box p {
+    font-size: medium
   }
 }
 
