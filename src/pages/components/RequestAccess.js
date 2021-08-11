@@ -171,7 +171,7 @@ class RequestAccess extends React.Component {
             type="submit"
             label="submit"
             className="request-button-submit">
-          <b>Request early access</b>
+          <b>Request an invite</b>
         </button>
         </div>
       </form>) : (

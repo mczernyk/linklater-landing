@@ -213,6 +213,14 @@ body {
   width: 100%;
 }
 
+.bullet-text {
+  text-align: center;
+}
+
+.bullet-text a {
+  color: #048BFF
+}
+
 .bullet-box:hover .bullet-icon {
   color: #048bff;
   transform: scale(1.05);

@@ -6,8 +6,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import "../styles/styles.css"
 
-import Intro from "./components/Intro"
-import Info from "./components/Info"
+import Intro from "./components/IntroBasic"
+import Info from "./components/InfoBasic"
 import RequestAccess from "./components/RequestAccess"
 import Footer from "./components/Footer"
 
