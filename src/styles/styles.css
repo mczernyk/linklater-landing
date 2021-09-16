@@ -572,3 +572,8 @@ input {
   font-weight: bold;
   color: #048bff
 }
+
+.error {
+  text-align: center;
+  width: 100%;
+}
